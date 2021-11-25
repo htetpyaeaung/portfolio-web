@@ -1,3 +1,10 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
 .hero-image {
     background: url(../Images/hero2.jpg) no-repeat center center fixed;
     background-size: cover;
@@ -11,40 +18,43 @@
     text-align: center;
 }
 
-.responsive-image{
-    width: 55%;
-    height: 86%;
-    align-items: center;
-    margin-top: 9.8rem;
-    margin-left: 12rem;
-}
-
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .intro-info {background: red; padding-top: 10rem;}
+  @media only screen and (max-width: 600px) {
+    .intro-info {background: red; padding-top: 7rem;}
+    .responsive-image{width: 50%; height: 97%; margin-top: 0.4rem; margin-left: 5rem;}
   }
+
+  @media only screen and (max-width: 600px) and (orientation: landscape) {
+    .intro-info {background: red; padding-top: 2rem;}
+    .responsive-image{width: 29%; height: 93%; margin-top: 1rem; margin-left: 11rem;}
+  } 
   
   /* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (min-width: 600px) {
-    .intro-info {background: green; padding-top: 19rem;}
+    .intro-info {background: green; padding-top: 14rem;}
+    .responsive-image{width: 47%; height: 85%; margin-top: 4.6rem; margin-left: 10rem;}
   }
   
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 768px) {
-    .intro-info {background: blue; padding-top: 14rem;}
+    .intro-info {background: blue; padding-top: 9rem;}
+    .responsive-image{width: 30%; height: 92%; margin-top: 1.9rem; margin-left: 18rem;}
   } 
 
   @media only screen and (min-width: 768px) and (orientation: portrait) {
-    .intro-info {background: blue; padding-top: 25rem;}
+    .intro-info {background: blue; padding-top: 19rem;}
+    .responsive-image{width: 41%; height: 93%; margin-top: 2.5rem; margin-left: 15rem;}
   } 
   
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
     .intro-info {background: orange; padding-top: 19rem;}
+    .responsive-image{width: 70%; height: 71%; margin-top: 14.2rem; margin-left: 4rem;}
   } 
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (min-width: 1200px) {
     .intro-info {background: pink; padding-top: 22rem;}
+    .responsive-image{width: 53%; height: 77%; margin-top: 13.7rem; margin-left: 11rem;}
   }
