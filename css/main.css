@@ -1,0 +1,50 @@
+.hero-image {
+    background: url(../Images/hero2.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+.intro-info {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+}
+
+.responsive-image{
+    width: 55%;
+    height: 86%;
+    align-items: center;
+    margin-top: 9.8rem;
+    margin-left: 12rem;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .intro-info {background: red; padding-top: 10rem;}
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .intro-info {background: green; padding-top: 19rem;}
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .intro-info {background: blue; padding-top: 14rem;}
+  } 
+
+  @media only screen and (min-width: 768px) and (orientation: portrait) {
+    .intro-info {background: blue; padding-top: 25rem;}
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .intro-info {background: orange; padding-top: 19rem;}
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .intro-info {background: pink; padding-top: 22rem;}
+  }
