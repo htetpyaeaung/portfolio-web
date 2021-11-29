@@ -5,24 +5,67 @@ body{
     padding: 0px;
 }
 
+body::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  
+}
+body::-webkit-scrollbar
+{
+  width: 14px;
+}
+ 
+body::-webkit-scrollbar-thumb
+{
+  
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.5);
+  background:  #501e27;
+}
+
 .hero-image {
     background: url(../Images/hero2.jpg) no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
+    font-family: 'Song Myung', serif;
+    margin-top: -4.3rem;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light div.container-fluid ul.navbar-nav li.nav-item a.nav-link{
+    color: #fff;
+    padding-right: 2.7rem;
+    padding-top: 1.3rem;
+}
+
+ul.navbar-nav{
+  margin-right: 14rem;
+}
+
+nav{
+  background-color: transparents;
 }
 
 .intro-info {
     color: white;
-    text-transform: uppercase;
     font-weight: 400;
     text-align: center;
 }
 
+#greet{
+    font-size: 2.75rem;
+}
+
+#name{
+    font-size: 3.5rem;
+}
 
 /* Extra small devices (phones, 600px and down) */
   @media only screen and (max-width: 600px) {
     .intro-info {background: red; padding-top: 7rem;}
     .responsive-image{width: 50%; height: 97%; margin-top: 0.4rem; margin-left: 5rem;}
+    nav.navbar.navbar-expand-lg.navbar-light div.container-fluid ul.navbar-nav li.nav-item a.nav-link{
+      color: #000;
+    }
+    .hero-image{margin-top: -4.3rem;}
   }
 
   @media only screen and (max-width: 600px) and (orientation: landscape) {
