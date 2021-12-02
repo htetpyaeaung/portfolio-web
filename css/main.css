@@ -58,46 +58,120 @@ nav{
     font-size: 3.5rem;
 }
 
+/** For Mobile Menu */ 
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #1a6e1a;
+  overflow-x: hidden;
+  transition: 1.0s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+}
+
+.overlay a {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 40px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: black;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 70px;
+}
+
+.about{
+  width: 100%;
+  height: 100vh;
+  background-color: #dc143c;
+}
+
+.about-text-wrapper{
+  text-align: center;
+  position: absolute;
+  width: 50%;
+  margin: auto;
+  top: 78rem;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
 /* Extra small devices (phones, 600px and down) */
   @media only screen and (max-width: 600px) {
-    .intro-info {background: red; padding-top: 7rem;}
-    .responsive-image{width: 50%; height: 97%; margin-top: 0.4rem; margin-left: 5rem;}
+    .intro-info {background: red; padding-top: 1.3rem;}
+    .responsive-image{width: 50%; height: 100%; margin-left: 5rem;}
     nav.navbar.navbar-expand-lg.navbar-light div.container-fluid ul.navbar-nav li.nav-item a.nav-link{
       color: #000;
     }
-    .hero-image{margin-top: -4.3rem;}
+    .hero-image{margin-top: -0.3rem;}
+    #greet{font-size: 1.85rem;}
+    #name{font-size: 2.2rem;}
+    span{padding-right: 17rem;}
   }
 
   @media only screen and (max-width: 600px) and (orientation: landscape) {
-    .intro-info {background: red; padding-top: 2rem;}
-    .responsive-image{width: 29%; height: 93%; margin-top: 1rem; margin-left: 11rem;}
+    .intro-info {background: red; padding-top: 0rem;}
+    .responsive-image{width: 29%; height: 100%; margin-top: 0.1rem; margin-left: 11rem;}
+    #greet{font-size: 1.1rem;}
+    #name{font-size: 1.6rem;}
+    span{padding-right: 27rem;}
   } 
   
   /* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (min-width: 600px) {
-    .intro-info {background: green; padding-top: 14rem;}
-    .responsive-image{width: 47%; height: 85%; margin-top: 4.6rem; margin-left: 10rem;}
+    .intro-info {background: green; padding-top: 5rem;}
+    .responsive-image{width: 51%; height: 90%; margin-top: 3.6rem; margin-left: 9rem;}
+    #greet{font-size: 2.15rem; padding-top: 2rem;}
+    #name{font-size: 2.6rem;}
+    .hero-image{height: 108vh;}
+    span{padding-right: 34rem;}
   }
   
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 768px) {
-    .intro-info {background: blue; padding-top: 9rem;}
+    .intro-info {background: blue; padding-top: 5rem;}
     .responsive-image{width: 30%; height: 92%; margin-top: 1.9rem; margin-left: 18rem;}
+    .hero-image{height: 111vh;}
+    span{padding-right: 44rem;}
   } 
 
   @media only screen and (min-width: 768px) and (orientation: portrait) {
-    .intro-info {background: blue; padding-top: 19rem;}
-    .responsive-image{width: 41%; height: 93%; margin-top: 2.5rem; margin-left: 15rem;}
+    .intro-info {background: blue; padding-top: 6rem;}
+    .responsive-image{width: 51%; height: 97%; margin-top: 1.5rem; margin-left: 13rem;}
+    .hero-image{height: 106vh;}
   } 
   
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
     .intro-info {background: orange; padding-top: 19rem;}
     .responsive-image{width: 70%; height: 71%; margin-top: 14.2rem; margin-left: 4rem;}
+    .hero-image{height: 100vh;}
+    ul.navbar-nav{margin-right: 4rem;}
   } 
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (min-width: 1200px) {
     .intro-info {background: pink; padding-top: 22rem;}
-    .responsive-image{width: 53%; height: 77%; margin-top: 13.7rem; margin-left: 11rem;}
+    .responsive-image{width: 54%; height: 82%; margin-top: 10.7rem; margin-left: 11rem;}
+    ul.navbar-nav{margin-right: 14rem;}
   }
