@@ -3,6 +3,7 @@ body{
     height: 100%;
     margin: 0px;
     padding: 0px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body::-webkit-scrollbar-track
@@ -23,10 +24,9 @@ body::-webkit-scrollbar-thumb
 }
 
 .hero-image {
-    background: url(../Images/hero2.jpg) no-repeat center center fixed;
+    background: url(../images/hero2.jpg) no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
-    font-family: 'Song Myung', serif;
     margin-top: -4.3rem;
 }
 
@@ -66,7 +66,7 @@ nav{
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #1a6e1a;
+  background-color: #000;
   overflow-x: hidden;
   transition: 1.0s;
 }
@@ -81,15 +81,15 @@ nav{
 .overlay a {
   padding: 10px;
   text-decoration: none;
-  font-size: 40px;
-  color: white;
+  font-size: 30px;
+  color: #fff;
   display: block;
   transition: 0.3s;
 }
 
 .overlay a:hover,
 .overlay a:focus {
-  color: black;
+  color: #ff0000;
 }
 
 .overlay .closebtn {
@@ -99,21 +99,40 @@ nav{
   font-size: 70px;
 }
 
-.about{
+#about{
   width: 100%;
   height: 100vh;
-  background-color: #dc143c;
+  /** background-color: #dc143c; */
 }
 
-.about-text-wrapper{
+.about-text{
+  font-weight: 400;
+}
+
+.about-text-wrapper, .project-pointer{ 
   text-align: center;
   position: absolute;
   width: 50%;
   margin: auto;
-  top: 78rem;
+  top: 80rem;
   right: 0;
   bottom: 0;
   left: 0;
+}
+
+
+.position{
+  white-space: nowrap;
+  display: contents;
+  font-family: 'Space Mono', monospace;
+}
+
+#linkedinIcon{
+  margin-right: 2%;
+}
+
+#githubIcon{
+  margin-right: 2%;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -123,28 +142,39 @@ nav{
     nav.navbar.navbar-expand-lg.navbar-light div.container-fluid ul.navbar-nav li.nav-item a.nav-link{
       color: #000;
     }
-    .hero-image{margin-top: -0.3rem;}
-    #greet{font-size: 1.85rem;}
-    #name{font-size: 2.2rem;}
+    .hero-image{margin-top: 0rem;}
+    #greet{font-size: 1.25rem;}
+    #name{font-size: 1.8rem;}
     span{padding-right: 17rem;}
+    .about-text-wrapper, .project-pointer{width: 100%; top: 36rem; font-size: 13px;}
+    #linkedinIcon, #githubIcon, #instaIcon, #arrowIcon {width: 8%;}
+    .project-pointer{top: 59rem;}
+    .project-pointer h3{font-size: 13px;}
   }
 
   @media only screen and (max-width: 600px) and (orientation: landscape) {
     .intro-info {background: red; padding-top: 0rem;}
-    .responsive-image{width: 29%; height: 100%; margin-top: 0.1rem; margin-left: 11rem;}
+    .responsive-image{width: 29%; height: 99%; margin-top: 0.1rem; margin-left: 10rem;}
     #greet{font-size: 1.1rem;}
     #name{font-size: 1.6rem;}
     span{padding-right: 27rem;}
+    .about-text-wrapper, .project-pointer{width: 100%; top: 24rem; font-size: 12px;}
+    #linkedinIcon, #githubIcon, #instaIcon, #arrowIcon {width: 5%;}
+    .project-pointer{top: 39rem;}
   } 
   
   /* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (min-width: 600px) {
     .intro-info {background: green; padding-top: 5rem;}
-    .responsive-image{width: 51%; height: 90%; margin-top: 3.6rem; margin-left: 9rem;}
+    .responsive-image{width: 51%; height: 90%; margin-top: 3.4rem; margin-left: 9rem;}
     #greet{font-size: 2.15rem; padding-top: 2rem;}
     #name{font-size: 2.6rem;}
-    .hero-image{height: 108vh;}
+    .hero-image{height: 108vh; margin-top: -4.1rem;}
     span{padding-right: 34rem;}
+    .about-text-wrapper, .project-pointer{width: 100%; top: 66rem; font-size: 16px;}
+    .project-pointer{top: 98.9rem;}
+    .project-pointer h3{font-size: 13px;}
+    #linkedinIcon, #githubIcon, #instaIcon, #arrowIcon {width: 4%;}
   }
   
   /* Medium devices (landscape tablets, 768px and up) */
@@ -153,20 +183,27 @@ nav{
     .responsive-image{width: 30%; height: 92%; margin-top: 1.9rem; margin-left: 18rem;}
     .hero-image{height: 111vh;}
     span{padding-right: 44rem;}
+    .about-text-wrapper, .project-pointer{width: 100%; top: 47rem; font-size: 16px;}
+    .project-pointer{top: 73.8rem;}
+    #linkedinIcon, #githubIcon, #instaIcon, #arrowIcon {width: 4%;}
   } 
 
   @media only screen and (min-width: 768px) and (orientation: portrait) {
     .intro-info {background: blue; padding-top: 6rem;}
-    .responsive-image{width: 51%; height: 97%; margin-top: 1.5rem; margin-left: 13rem;}
-    .hero-image{height: 106vh;}
+    .responsive-image{width: 51%; height: 97%; margin-top: 1.2rem; margin-left: 13rem;}
+    .hero-image{height: 106vh; margin-top: -3rem;}
+    .about-text-wrapper, .project-pointer{width: 100%; top: 90rem; font-size: 18px;}
+    .project-pointer{top: 127.6rem;}
   } 
   
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
     .intro-info {background: orange; padding-top: 19rem;}
     .responsive-image{width: 70%; height: 71%; margin-top: 14.2rem; margin-left: 4rem;}
-    .hero-image{height: 100vh;}
+    .hero-image{height: 100vh; margin-top: -4.3rem;}
+    .about-text-wrapper, .project-pointer{width: 96%; top: 64rem; font-size: 16px;}
     ul.navbar-nav{margin-right: 4rem;}
+    .project-pointer{top: 94.1rem;}
   } 
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -174,4 +211,17 @@ nav{
     .intro-info {background: pink; padding-top: 22rem;}
     .responsive-image{width: 54%; height: 82%; margin-top: 10.7rem; margin-left: 11rem;}
     ul.navbar-nav{margin-right: 14rem;}
+    .about-text-wrapper, .project-pointer{ 
+      text-align: center;
+      position: absolute;
+      width: 50%;
+      margin: auto;
+      top: 80rem;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+    .project-pointer{ top: 114rem; }
+    #arrowIcon{width: 5%;}
+    .project-pointer h3{font-size: 16px;}
   }

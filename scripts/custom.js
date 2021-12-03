@@ -1,7 +1,7 @@
 if($(window).width()>900){
     $("nav").removeClass("overlay");
     $("#navbarContent").removeClass("overlay-content");
-    $("span").remove();
+    $(".burger-menu").remove();
 
 }else{
     $("nav").remove();

@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
     <!-- For Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     
     <title>Htet Pyae Aung | Developer</title>
@@ -25,7 +26,7 @@
         <div class="collapse navbar-collapse justify-content-end overlay-content" id="navbarContent" >
           <ul class="navbar-nav" >
               <li class="nav-item" id="nav-over" >
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Work</a>
@@ -46,10 +47,9 @@
           ×
       </a>
       <div class="overlay-content">
-          <a href="#">About</a>
-          <a href="#">Practice</a>
-          <a href="#">Courses</a>
-          <a href="#">Contact</a>
+          <a href="#about" onclick="closeNav()">About</a>
+          <a href="#" onclick="closeNav()">Work</a>
+          <a href="#" onclick="closeNav()">Contact</a>
       </div>
   </div>
 
@@ -60,7 +60,7 @@
     <div class="container-fluid hero-image">     
         <div class="row" style="height: 100%;">
             <div class="col-lg-6 intro-info">
-              <span style="font-size:35px;cursor:pointer; color: #fff;"
+              <span class="burger-menu" style="font-size:35px;cursor:pointer; color: #fff;"
               onclick="openNav()">
                 ≡
               </span> 
@@ -75,15 +75,30 @@
         </div>
     </div> 
 
-    <section class="container-fluid about">
+    <section class="container-fluid" id="about">
         <div class="row">
             <div class="col-lg-12 about-text-wrapper">
               <h1>Greetings!</h1>
-              <p>I am a graduate developer from University of South Australia with Bachelor in Software Development. 
+              <p class="about-text">I am a <span class="position">graduate developer</span> from University of South Australia with Bachelor in Software Development. 
                 I like to build ideas into life and this encouraged me into choosing developer as a career. 
                 Throughout my university life, I’ve collaborated with some great people in creating
-                production-ready system designs and products.
+                production-ready system designs and products. 
               </p>
+              <div class="social-icons">
+                  <a href="https://linkedin.com/in/htetpyaeaung-charles" target="_blank">
+                    <img src="icons/linkedin.png" alt="linkedin icon" width="3%" id="linkedinIcon">
+                  </a>
+                  <a href="https://github.com/htetpyaeaung" target="_blank">
+                    <img src="icons/github.gif" alt="github icon" width="3%" id="githubIcon">
+                  </a>
+                  <a href="https://www.instagram.com/itis_charlesh/" target="_blank">
+                    <img src="icons/instagram.png" alt="instagram icon" width="3%" id="instaIcon">
+                  </a>
+              </div>
+            </div>
+            <div class="col-lg-12 project-pointer">
+              <h3>View My Projects</h3>
+              <img src="icons/down.gif" alt="down arrow" width="7%" id="arrowIcon"> 
             </div>
         </div>
     </section>
