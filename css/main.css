@@ -99,17 +99,22 @@ nav{
   font-size: 70px;
 }
 
-#about{
+#about, #projects{
   width: 100%;
   height: 100vh;
   /** background-color: #dc143c; */
+}
+
+/** To Delete Later */
+#projects{
+    background-color: #dc143c;
 }
 
 .about-text{
   font-weight: 400;
 }
 
-.about-text-wrapper, .project-pointer{ 
+.about-text-wrapper, .project-pointer, .projects-heading{ 
   text-align: center;
   position: absolute;
   width: 50%;
@@ -127,12 +132,92 @@ nav{
   font-family: 'Space Mono', monospace;
 }
 
+.projects-heading{
+  top: 130rem;
+}
+
+.projects-heading p {
+  font-size: 17px;
+  margin-top: 25px;
+}
+
 #linkedinIcon{
   margin-right: 2%;
 }
 
 #githubIcon{
   margin-right: 2%;
+}
+
+#project-line1{
+  margin-top: 20rem;
+}
+
+#project-line1 .project-box{
+  height: 33.3vh;
+}
+
+#project-line2 .project-box{
+  height: 33.3vh;
+  background-color:#00ffff;
+}
+
+#b1 ,#b2{
+  position: relative;
+  
+}
+
+#b1:hover #bg, #b1:hover #logo, #b2:hover #bg, #b2:hover #logo {
+  opacity: 0.3;
+  transition: .5s ease;
+}
+
+#logo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 28%;
+}
+
+#bg{
+  width: 104%;
+  height: 33.3vh;
+  filter: brightness(.4);
+  transition: .5s ease;
+  backface-visibility: hidden;
+  object-fit: cover;
+  margin-left: -12px;
+}
+
+.tagHolder{
+  opacity: 0;
+  transition: .5s ease;
+  position: absolute;
+  width: 60%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#b1:hover .tagHolder, #b2:hover .tagHolder{
+  opacity: 1.3;
+}
+
+.badge-secondary{
+  background-color: #808080;
+  color: white;
+  font-size: 16px;
+}
+
+#b2 #bg{
+  filter: brightness(.8);
+}
+
+#b3{
+  background-color: chartreuse;
 }
 
 /* Extra small devices (phones, 600px and down) */

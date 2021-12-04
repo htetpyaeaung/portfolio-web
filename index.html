@@ -29,7 +29,7 @@
                 <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Work</a>
+                <a class="nav-link" href="#projects">Work</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Contact</a>
@@ -48,7 +48,7 @@
       </a>
       <div class="overlay-content">
           <a href="#about" onclick="closeNav()">About</a>
-          <a href="#" onclick="closeNav()">Work</a>
+          <a href="#projects" onclick="closeNav()">Work</a>
           <a href="#" onclick="closeNav()">Contact</a>
       </div>
   </div>
@@ -75,6 +75,7 @@
         </div>
     </div> 
 
+    <!-- About Section -->
     <section class="container-fluid" id="about">
         <div class="row">
             <div class="col-lg-12 about-text-wrapper">
@@ -98,9 +99,53 @@
             </div>
             <div class="col-lg-12 project-pointer">
               <h3>View My Projects</h3>
-              <img src="icons/down.gif" alt="down arrow" width="7%" id="arrowIcon"> 
+              <a href="#projects">
+                <img src="icons/down.gif" alt="down arrow" width="7%" id="arrowIcon"> 
+              </a>
             </div>
         </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="container-fluid" id="projects">
+      <div class="row">
+          <div class="projects-heading">
+              <h1>Projects</h1>
+              <p>
+                Here are a few projects I've worked throughout my university and career.
+                <a href="https://github.com/htetpyaeaung" target="_blank">Explore More</a>
+              </p>
+          </div>
+          <div class="col">
+            <div class="row" id="project-line1">
+              <div class="col-lg-4 project-box" id="b1">
+                <img src="images/box1_bg.jpg" alt="OC_bg" id="bg">
+                <img src="images/box1_logo.jpg" alt="OC_logo" id="logo" >
+                <div class="tagHolder" id="th1">
+                  <div class="badge badge-secondary">Web App</div>
+                  <div class="badge badge-secondary">HTML/CSS/JS</div>
+                  <div class="badge badge-secondary">WordPress</div>
+                </div>
+              </div>
+              <div class="col-lg-4 project-box" id="b2">
+                <img src="images/box2_bg.jpg" alt="tf_bg" id="bg">
+                <img src="images/box2_logo.svg" alt="tf_logo" id="logo">
+                <div class="tagHolder">
+                  <div class="badge badge-secondary">Web App</div>
+                  <div class="badge badge-secondary">HTML/CSS/JS</div>
+                  <div class="badge badge-secondary">WordPress</div>
+                  <div class="badge badge-secondary">APIs</div>
+                </div>
+              </div>
+              <div class="col-lg-4 project-box" id="b3">A</div>
+            </div>
+            <div class="row" id="project-line2">
+              <div class="col-lg-4 project-box" id="b4">A</div>
+              <div class="col-lg-4 project-box" id="b5">A</div>
+              <div class="col-lg-4 project-box" id="b6">A</div>
+            </div>
+          </div> 
+      </div>
     </section>
 
     
