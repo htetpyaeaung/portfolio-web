@@ -108,6 +108,8 @@ nav{
 /** To Delete Later */
 #projects{
     background-color: #dc143c;
+    position: relative;
+    
 }
 
 .about-text{
@@ -133,7 +135,8 @@ nav{
 }
 
 .projects-heading{
-  top: 130rem;
+  top: 12%;
+  position: absolute;
 }
 
 .projects-heading p {
@@ -159,15 +162,13 @@ nav{
 
 #project-line2 .project-box{
   height: 33.3vh;
-  background-color:#00ffff;
 }
 
-#b1 ,#b2{
+#b1 ,#b2, #b3, #b4, #b5, #b6{
   position: relative;
-  
 }
 
-#b1:hover #bg, #b1:hover #logo, #b2:hover #bg, #b2:hover #logo {
+.project-box:hover #bg, .project-box:hover #logo {
   opacity: 0.3;
   transition: .5s ease;
 }
@@ -202,7 +203,7 @@ nav{
   text-align: center;
 }
 
-#b1:hover .tagHolder, #b2:hover .tagHolder{
+.project-box:hover .tagHolder{
   opacity: 1.3;
 }
 
@@ -216,9 +217,11 @@ nav{
   filter: brightness(.8);
 }
 
-#b3{
-  background-color: chartreuse;
+#b3 #logo{
+  width: 18%;
+  left: 52%;
 }
+
 
 /* Extra small devices (phones, 600px and down) */
   @media only screen and (max-width: 600px) {
@@ -235,6 +238,11 @@ nav{
     #linkedinIcon, #githubIcon, #instaIcon, #arrowIcon {width: 8%;}
     .project-pointer{top: 59rem;}
     .project-pointer h3{font-size: 13px;}
+    #projects{ height: 100%;}
+    .projects-heading{margin-top: -6rem; width: 100%;}
+    .projects-heading p {margin-top: 18px; font-size: 13px;}
+    #project-line1{margin-top: 10rem;}
+    #bg{width: 108%;}
   }
 
   @media only screen and (max-width: 600px) and (orientation: landscape) {
@@ -246,6 +254,11 @@ nav{
     .about-text-wrapper, .project-pointer{width: 100%; top: 24rem; font-size: 12px;}
     #linkedinIcon, #githubIcon, #instaIcon, #arrowIcon {width: 5%;}
     .project-pointer{top: 39rem;}
+    .projects-heading{margin-top: -4rem;}
+    #logo{width: 19%;}
+    #bg{width: 105.4%;}
+    #b3 #logo{width: 14%;}
+    #b6 .tagHolder{width: 100%;}
   } 
   
   /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -260,6 +273,10 @@ nav{
     .project-pointer{top: 98.9rem;}
     .project-pointer h3{font-size: 13px;}
     #linkedinIcon, #githubIcon, #instaIcon, #arrowIcon {width: 4%;}
+    #projects{ height: 100%;}
+    .projects-heading{margin-top: -10rem; width: 100%;}
+    #project-line1{margin-top: 15rem;}
+    #bg{width: 104.3%;}
   }
   
   /* Medium devices (landscape tablets, 768px and up) */
