@@ -109,7 +109,7 @@
     <!-- Projects Section -->
     <section class="container-fluid" id="projects">
       <div class="row">
-          <div class="projects-heading">
+          <div class="projects-heading" onclick="closeProjectInfo()">
               <h1>Projects</h1>
               <p>
                 Here are a few projects I've worked throughout my university and career.
@@ -118,7 +118,7 @@
           </div>
           <div class="col">
             <div class="row" id="project-line1">
-              <div class="col-lg-4 col-md-4 project-box" id="b1">
+              <div class="col-lg-4 col-md-4 project-box" id="b1" onclick="openProjectInfo()">
                 <img src="images/box1_bg.jpg" alt="OC_bg" id="bg">
                 <img src="images/box1_logo.jpg" alt="OC_logo" id="logo" >
                 <div class="tagHolder" id="th1">
@@ -127,7 +127,7 @@
                   <div class="badge badge-secondary">WordPress</div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-4 project-box" id="b2">
+              <div class="col-lg-4 col-md-4 project-box" id="b2" onclick="openProjectInfo()">
                 <img src="images/box2_bg.jpg" alt="tf_bg" id="bg">
                 <img src="images/box2_logo.svg" alt="tf_logo" id="logo">
                 <div class="tagHolder">
@@ -137,7 +137,7 @@
                   <div class="badge badge-secondary" style="margin-top: 10px;">Customized APIs</div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-4 project-box" id="b3">
+              <div class="col-lg-4 col-md-4 project-box" id="b3" onclick="openProjectInfo()">
                 <img src="images/box3_bg.jpg" alt="dam" id="bg">
                 <img src="images/unisa_logo.png" alt="unisa_logo" id="logo">
                 <div class="tagHolder">
@@ -148,7 +148,7 @@
               </div>
             </div>
             <div class="row" id="project-line2">
-              <div class="col-lg-4 col-md-4 project-box" id="b4">
+              <div class="col-lg-4 col-md-4 project-box" id="b4" onclick="openProjectInfo()">
                 <img src="images/box4_bg.jpg" alt="car driving" id="bg">
                 <img src="images/box4_logo.png" alt="nuber_logo" id="logo">
                 <div class="tagHolder">
@@ -159,7 +159,7 @@
                   <div class="badge badge-secondary" style="margin-top: 10px;">Java</div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-4 project-box" id="b5">
+              <div class="col-lg-4 col-md-4 project-box" id="b5" onclick="openProjectInfo()">
                 <img src="images/box5_bg.jpg" alt="car driving" id="bg">
                 <div class="tagHolder">
                   <div class="badge badge-secondary">Java App</div>
@@ -167,7 +167,7 @@
                   <div class="badge badge-secondary">MySQL</div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-4 project-box" id="b6">
+              <div class="col-lg-4 col-md-4 project-box" id="b6" onclick="openProjectInfo()">
                 <img src="images/box6_bg.jpg" alt="library cupboard" id="bg">
                 <div class="tagHolder">
                   <div class="badge badge-secondary">Web App</div>
@@ -182,6 +182,24 @@
       </div>
     </section>
 
+    <!-- Individual Project Section -->
+
+    <section id="myProjects" class="i-projects">
+      <a href="javascript:void(0)" 
+          class="closebtn" onclick="closeProjectInfo()">
+          ×
+      </a>
+      <div class="iproj-content container-fluid">
+          <div class="row">
+            <div class="col-lg-5">
+              <p>This will be image section</p>
+            </div>
+            <div class="col-lg-7">
+              <p>This will be heading and stuff</p>
+            </div>
+          </div>
+      </div>
+    </section>
     
     
     <!-- External JS file-->
@@ -189,5 +207,7 @@
     <script src="scripts/custom.js"></script>
     <!-- Bootstrap JS-->
     <script src="scripts/bootstrap.min.js"></script>
+    <!-- Angular JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
   </body>
 </html>

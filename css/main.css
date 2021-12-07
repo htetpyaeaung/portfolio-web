@@ -60,7 +60,7 @@ nav{
 
 /** For Mobile Menu */ 
 
-.overlay {
+.overlay, .i-projects{
   height: 100%;
   width: 0;
   position: fixed;
@@ -71,14 +71,19 @@ nav{
   transition: 1.0s;
 }
 
-.overlay-content {
+.i-projects{
+  height: 68.2%;
+  margin-top: 16%;
+}
+
+.overlay-content, .iproj-content {
   position: relative;
   top: 25%;
   width: 100%;
   text-align: center;
 }
 
-.overlay a {
+.overlay a , .i-projects a{
   padding: 10px;
   text-decoration: none;
   font-size: 30px;
@@ -223,6 +228,7 @@ nav{
 }
 
 
+
 /* Extra small devices (phones, 600px and down) */
   @media only screen and (max-width: 600px) {
     .intro-info {background: red; padding-top: 1.3rem;}
@@ -288,6 +294,10 @@ nav{
     .about-text-wrapper, .project-pointer{width: 100%; top: 47rem; font-size: 16px;}
     .project-pointer{top: 73.8rem;}
     #linkedinIcon, #githubIcon, #instaIcon, #arrowIcon {width: 4%;}
+    #bg{width: 110.3%;}
+    #projects{ height: 100vh;}
+    .projects-heading{margin-top: 1rem;}
+    #project-line1{margin-top: 12.9rem;}
   } 
 
   @media only screen and (min-width: 768px) and (orientation: portrait) {
@@ -296,6 +306,8 @@ nav{
     .hero-image{height: 106vh; margin-top: -3rem;}
     .about-text-wrapper, .project-pointer{width: 100%; top: 90rem; font-size: 18px;}
     .project-pointer{top: 127.6rem;}
+    #project-line1{margin-top: 21.7rem;}
+    .projects-heading{margin-top: 4rem;}
   } 
   
   /* Large devices (laptops/desktops, 992px and up) */
@@ -306,6 +318,8 @@ nav{
     .about-text-wrapper, .project-pointer{width: 96%; top: 64rem; font-size: 16px;}
     ul.navbar-nav{margin-right: 4rem;}
     .project-pointer{top: 94.1rem;}
+    #bg{width: 107.7%;}
+    #project-line1{margin-top: 16.4rem;}
   } 
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -326,4 +340,6 @@ nav{
     .project-pointer{ top: 114rem; }
     #arrowIcon{width: 5%;}
     .project-pointer h3{font-size: 16px;}
+    #bg{width: 104%;}
+    #project-line1{margin-top: 20rem;}
   }
