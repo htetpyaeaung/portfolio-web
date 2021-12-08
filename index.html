@@ -14,7 +14,7 @@
     
     <title>Htet Pyae Aung | Developer</title>
   </head>
-  <body>
+  <body data-ng-app="project-module">
 
     <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-light overlay">
@@ -107,7 +107,7 @@
     </section>
 
     <!-- Projects Section -->
-    <section class="container-fluid" id="projects">
+    <section class="container-fluid" id="projects" data-ng-controller="projectController">
       <div class="row">
           <div class="projects-heading" onclick="closeProjectInfo()">
               <h1>Projects</h1>
@@ -184,21 +184,23 @@
 
     <!-- Individual Project Section -->
 
-    <section id="myProjects" class="i-projects">
+    <section id="myProjects" class="i-projects" data-ng-view="">
       <a href="javascript:void(0)" 
           class="closebtn" onclick="closeProjectInfo()">
           ×
       </a>
       <div class="iproj-content container-fluid">
-          <div class="row">
-            <div class="col-lg-5">
-              <p>This will be image section</p>
-            </div>
-            <div class="col-lg-7">
-              <p>This will be heading and stuff</p>
-            </div>
-          </div>
-      </div>
+        <div class="row">
+        <div class="col-lg-5">
+            <img src="">
+        </div>
+        <div class="col-lg-7" style="color: white;">
+            <p id="p-heading"></p>
+            <p id="p-desc"></p>
+            <p id="p-tech"></p>
+        </div>
+        </div>
+    </div>
     </section>
     
     
@@ -207,7 +209,5 @@
     <script src="scripts/custom.js"></script>
     <!-- Bootstrap JS-->
     <script src="scripts/bootstrap.min.js"></script>
-    <!-- Angular JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
   </body>
 </html>

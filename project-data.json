@@ -1,0 +1,44 @@
+[
+    {
+        "id": "b1",
+        "ProjectTitle": "Orient Crown Interior Design Website",
+        "Technologies": "WordPress, HTML5, CSS3, JS & PHP",
+        "Description" : "This is Description",
+        "ProjectImage": "images/p-info-1"      
+    },
+    {
+        "id": "b2",
+        "ProjectTitle": "Thermo Fisher Maintenance Web System",
+        "Technologies": "WordPress, HTML5, CSS3, JS, PHP & Customized APIs",
+        "Description" : "This is Description",
+        "ProjectImage": "images/p-info-2"
+    },    
+    {
+        "id": "b3",
+        "ProjectTitle": "SA Water Reserviors Data Visualisation",
+        "Technologies": "WordPress, HTML5, CSS3, JS & PHP",
+        "Description" : "This is Description",
+        "ProjectImage": "images/p-info-3"
+    },
+    {
+        "id": "b4",
+        "ProjectTitle": "Nuber Ride-Sharing Service",
+        "Technologies": "WordPress, HTML5, CSS3, JS & D3.js",
+        "Description" : "This is Description",
+        "ProjectImage": "images/p-info-4"
+    },
+    {
+        "id": "b5",
+        "ProjectTitle": "Point-Of-Sale System",
+        "Technologies": "HTML5, CSS3, JS & React for Web App System, AWS for Hosting, Java for Desktop System",
+        "Description" : "This is Description",
+        "ProjectImage": "images/p-info-5"
+    },
+    {
+        "id": "b6",
+        "ProjectTitle": "Library Management System",
+        "Technologies": "HTML5, CSS3, JS, ASP.Net for Backend, MS-SQL forr Database & Customized APIs",
+        "Description" : "This is Description",
+        "ProjectImage": "images/p-info-6"
+    }    
+]

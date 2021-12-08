@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/htetpyaeaung/portfolio-web/issues"
   },
-  "homepage": "https://github.com/htetpyaeaung/portfolio-web#readme"
+  "homepage": "https://github.com/htetpyaeaung/portfolio-web#readme",
+  "dependencies": {
+    "angular-route": "^1.8.2"
+  }
 }
