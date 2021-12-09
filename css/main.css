@@ -130,7 +130,7 @@ nav{
   font-weight: 400;
 }
 
-.about-text-wrapper, .project-pointer, .projects-heading, .contact-info-wrapper{ 
+.about-text-wrapper, .project-pointer, .projects-heading{ 
   text-align: center;
   position: absolute;
   width: 50%;
@@ -142,14 +142,26 @@ nav{
 }
 
 #contact-info{
-  position: relative;
-  height: 60%;
-  background-color: #a52a2a;
+  background-color: #a5252a;
 }
 
 .contact-info-wrapper{
-  top: 11rem;
+  text-align: center;
+  margin-top: 6rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  color: #fff;
+}
 
+.credit{
+  text-align: center;
+  margin-top: 9rem;
+  font-size: 12px;
+}
+
+#emailbtn{
+  margin-bottom: 5rem;
+  margin-top: 1rem;
 }
 
 .position{
@@ -256,9 +268,26 @@ nav{
   margin-left: 45rem;
 }
 
-/* Email Button Decoration from saruwakakun.com*/
+#footer-section{
+  height: 33vh; 
+  margin-top: 6rem;
+}
 
+.footer-text-wrapper{
+  text-align: center;
+}
 
+#linkedinIconfooter, 
+#githubIconfooter, 
+#instaIconfooter,
+#twitterIconfooter {
+  width: 2%;
+  margin-right: 2%;
+}
+
+.social-icons-footer{
+  padding-left: 2%;
+}
 
 /* Extra small devices (phones, 600px and down) */
   @media only screen and (max-width: 600px) {
@@ -285,6 +314,10 @@ nav{
     #project-content h1{font-size: 21px;}
     #project-content h3{font-size: 18px;}
     .i-projects .closebtn{margin-left: 16rem;}
+    #linkedinIconfooter, #githubIconfooter, #instaIconfooter,#twitterIconfooter {
+      width: 9%;
+      margin-right: 5%;
+    }
   }
 
   @media only screen and (max-width: 600px) and (orientation: landscape) {
@@ -302,6 +335,9 @@ nav{
     #b3 #logo{width: 14%;}
     #b6 .tagHolder{width: 100%;}
     .i-projects .closebtn{margin-left: 26rem;}
+    #linkedinIconfooter, #githubIconfooter, #instaIconfooter,#twitterIconfooter {
+      width: 6%;
+    }
   } 
   
   /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -325,6 +361,10 @@ nav{
     #project-content h1{font-size: 21px;}
     #project-content h3{font-size: 18px;}
     .i-projects .closebtn{margin-left: 35rem;}
+    #linkedinIconfooter, #githubIconfooter, #instaIconfooter,#twitterIconfooter {
+      width: 5%;
+      margin-right: 3%;
+    }
   }
   
   /* Medium devices (landscape tablets, 768px and up) */
@@ -343,6 +383,9 @@ nav{
     #project-content h1{font-size: 21px;}
     #project-content h3{font-size: 18px;}
     .i-projects .closebtn{margin-left: 46.5rem;}
+    #linkedinIconfooter, #githubIconfooter, #instaIconfooter,#twitterIconfooter {
+      width: 4%;
+    }
   } 
 
   @media only screen and (min-width: 768px) and (orientation: portrait) {
@@ -354,6 +397,7 @@ nav{
     #project-line1{margin-top: 21.7rem;}
     .projects-heading{margin-top: 4rem;}
     .i-projects .closebtn{margin-left: 45.5rem;}
+    .credit{margin-top: 12rem;}
   } 
   
   /* Large devices (laptops/desktops, 992px and up) */
@@ -368,6 +412,9 @@ nav{
     #project-line1{margin-top: 16.4rem;}
     .i-projects{margin-top: 24.3%;}
     .i-projects .closebtn{margin-left: 60.5rem;}
+    #linkedinIconfooter, #githubIconfooter, #instaIconfooter,#twitterIconfooter {
+      width: 3%;
+    }
   } 
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -392,4 +439,8 @@ nav{
     #project-line1{margin-top: 20rem;}
     .i-projects{height: 68.2%; margin-top: 16%;}
     .i-projects .closebtn{margin-left: 114.5rem;}
+    #linkedinIconfooter, #githubIconfooter, #instaIconfooter,#twitterIconfooter {
+      width: 2%;
+      margin-right: 2%;
+    }
   }
