@@ -104,7 +104,6 @@ nav{
 
 /** To Delete Later */
 #projects{
-    background-color: #dc143c;
     position: relative;
     
 }
@@ -284,7 +283,7 @@ nav{
 
 /* Extra small devices (phones, 600px and down) */
   @media only screen and (max-width: 600px) {
-    .intro-info {background: red; padding-top: 1.3rem;}
+    .intro-info {padding-top: 1.3rem;}
     .responsive-image{width: 50%; height: 100%; margin-left: 5rem;}
     nav.navbar.navbar-expand-lg.navbar-light div.container-fluid ul.navbar-nav li.nav-item a.nav-link{
       color: #000;
@@ -316,7 +315,7 @@ nav{
   }
 
   @media only screen and (max-width: 600px) and (orientation: landscape) {
-    .intro-info {background: red; padding-top: 0rem;}
+    .intro-info {padding-top: 0rem;}
     .responsive-image{width: 29%; height: 99%; margin-top: 0.1rem; margin-left: 10rem;}
     #greet{font-size: 1.1rem;}
     #name{font-size: 1.6rem;}
@@ -340,7 +339,7 @@ nav{
   
   /* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (min-width: 600px) {
-    .intro-info {background: green; padding-top: 5rem;}
+    .intro-info {padding-top: 5rem;}
     .responsive-image{width: 51%; height: 90%; margin-top: 3.4rem; margin-left: 9rem;}
     #greet{font-size: 2.15rem; padding-top: 2rem;}
     #name{font-size: 2.6rem;}
@@ -370,7 +369,7 @@ nav{
   
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 768px) {
-    .intro-info {background: blue; padding-top: 5rem;}
+    .intro-info {padding-top: 5rem;}
     .responsive-image{width: 30%; height: 92%; margin-top: 1.9rem; margin-left: 18rem;}
     .hero-image{height: 111vh;}
     span{padding-right: 44rem;}
@@ -393,7 +392,7 @@ nav{
   } 
 
   @media only screen and (min-width: 768px) and (orientation: portrait) {
-    .intro-info {background: blue; padding-top: 6rem;}
+    .intro-info {padding-top: 6rem;}
     .responsive-image{width: 51%; height: 97%; margin-top: 1.2rem; margin-left: 13rem;}
     .hero-image{height: 106vh; margin-top: -3rem;}
     .about-text-wrapper, .project-pointer{width: 100%; top: 90rem; font-size: 18px;}
@@ -410,7 +409,7 @@ nav{
   
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
-    .intro-info {background: orange; padding-top: 19rem;}
+    .intro-info {padding-top: 19rem;}
     .responsive-image{width: 70%; height: 71%; margin-top: 14.2rem; margin-left: 4rem;}
     .hero-image{height: 100vh; margin-top: -4.3rem;}
     .about-text-wrapper, .project-pointer{width: 96%; top: 64rem; font-size: 16px;}
@@ -433,6 +432,7 @@ nav{
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (min-width: 1200px) {
     .responsive-image{width: 54%; height: 82%; margin-top: 10.7rem; margin-left: 11rem;}
+    .chrome .responsive-image{margin-top: 10.5rem;}
     ul.navbar-nav{margin-right: 14rem;}
     .about-text-wrapper, .project-pointer{ 
       text-align: center;
@@ -448,7 +448,7 @@ nav{
       top: 98rem;
     }
     .project-pointer{ top: 114rem; }
-    .chrome .project-pointer{top: 167rem;}
+    .chrome .project-pointer{top: 165rem;}
     #arrowIcon{width: 5%;}
     .project-pointer h3{font-size: 16px;}
     #bg{width: 104%;}
