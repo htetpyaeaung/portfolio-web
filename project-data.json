@@ -3,42 +3,42 @@
         "id": "b1",
         "ProjectTitle": "Orient Crown Interior Design Website",
         "Technologies": "WordPress, HTML5, CSS3, JS & PHP",
-        "Description" : "This is Description",
-        "ProjectImage": "images/p-info-1"      
+        "Description" : "I was hired as web developer to develop a website for the business from initial stage to optimizing in SEO to rank up the website locally. Throughout the times in there, I had to update the website design and improve the performance every quarterly which increased the website performance and attracted international and local customers by 30%.",
+        "ProjectImage": "/images/p-info-1.jpg"      
     },
     {
         "id": "b2",
         "ProjectTitle": "Thermo Fisher Maintenance Web System",
         "Technologies": "WordPress, HTML5, CSS3, JS, PHP & Customized APIs",
-        "Description" : "This is Description",
-        "ProjectImage": "images/p-info-2"
+        "Description" : "I worked with a corporation called Thermo Fisher Scientific as part of my Capstone Project with two-person team. One of the project goals is to digitalise the manual steps in their business processess to optimize the maintenance. Currently, the maintenance department use paper forms and the supervisor has to print out and distribute to other employees manually to get the work update. With this new system, employee can simply fill the online form from their tablet and the supervisor will be notified through email if there is something wrong in the submitted forms. In addition, the supervisor can easily view the details of spare parts and equipments stock level in the system. Data to their details are fed through customized APIs. ",
+        "ProjectImage": "/images/p-info-2.jpg"
     },    
     {
         "id": "b3",
         "ProjectTitle": "SA Water Reserviors Data Visualisation",
-        "Technologies": "WordPress, HTML5, CSS3, JS & PHP",
-        "Description" : "This is Description",
-        "ProjectImage": "images/p-info-3"
+        "Technologies": "WordPress, HTML5, CSS3, JS & ASP.Net",
+        "Description" : "Water Volume Data of last 3 years from all reserviors in Adelaide are retrieved from Data SA through SA water, a government agency and visualized on the graph using javascript data visualization framework, D3.",
+        "ProjectImage": "/images/p-info-3.jpg"
     },
     {
         "id": "b4",
         "ProjectTitle": "Nuber Ride-Sharing Service",
-        "Technologies": "WordPress, HTML5, CSS3, JS & D3.js",
-        "Description" : "This is Description",
-        "ProjectImage": "images/p-info-4"
+        "Technologies": "HTML5, CSS3, React.js, Different AWS Services",
+        "Description" : "Nuber, an Uber-Clone ride sharing service, was designed to expand the service across the globe using cloud infrastructure. The design architecture of Nuber carefully consider all privacy laws and strengthen the infrastructure security. In this project, it was created through React.js with some bootstrapping included. The website is hosted on AWS amplify and all users are authenticated through AWS Cognito before they can use the service. Driver has to upload their ID to the system before they can drive and all uploaded IDs are stored in S3 bucket which is connected to Amplify through API gateway.",
+        "ProjectImage": "/images/p-info-4.jpg"
     },
     {
         "id": "b5",
         "ProjectTitle": "Point-Of-Sale System",
-        "Technologies": "HTML5, CSS3, JS & React for Web App System, AWS for Hosting, Java for Desktop System",
-        "Description" : "This is Description",
-        "ProjectImage": "images/p-info-5"
+        "Technologies": "Java, MySQL",
+        "Description" : "A simple POS System created with Java backed by MySQL database which stored all transactions and users",
+        "ProjectImage": "/images/p-info-5.png"
     },
     {
         "id": "b6",
         "ProjectTitle": "Library Management System",
-        "Technologies": "HTML5, CSS3, JS, ASP.Net for Backend, MS-SQL forr Database & Customized APIs",
-        "Description" : "This is Description",
-        "ProjectImage": "images/p-info-6"
+        "Technologies": "HTML5, CSS3, JS, ASP.Net for Backend, MS-SQL for Database & Customized APIs",
+        "Description" : "An ongoing library management system where admin can store books in the database and users can download or read the books online without having to search for all individual websites. If user's desired books are not in the system, they can request to add in the system where the system will find the books across different websites to put in the system in a short-time. Different APIs from book websites are used to search for books and download them. Users can create the account and saved the read book collection",
+        "ProjectImage": "https://via.placeholder.com/768x385.png?text=Image+Coming+Soon"
     }    
 ]

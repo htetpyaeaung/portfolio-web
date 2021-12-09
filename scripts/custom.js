@@ -30,15 +30,24 @@ let tagValue;
 //get id from divs that user clicks
 $("#projects div").click(function(e){
     mainValue = $(this).attr("id");
-    jsonGet(mainValue);
+    if(mainValue !== undefined){
+        jsonGet(mainValue);
+        mainValue="";
+    }else{
+        jsonGet(tagValue);
+    }
     return false;
 });
 
 $(".tagHolder div").click(function(f){
     tagValue = $(this).parent().parent().attr("id");
-    jsonGet(tagValue);
+    if(tagValue !== undefined){
+        jsonGet(tagValue);
+    }
+    
     return false;
 });   
+
 
 //get data from json file and add to individual project section tag
 function jsonGet(clickValue){
@@ -47,13 +56,16 @@ function jsonGet(clickValue){
             document.getElementById("p-heading").innerHTML=data[0].ProjectTitle;
             document.getElementById("p-desc").innerHTML=data[0].Description;
             document.getElementById("p-tech").innerHTML=data[0].Technologies;
+            document.getElementById("p-image").src = data[0].ProjectImage;
         }
         else{
-            document.getElementById("p-heading").innerHTML=data[parseInt(mainValue.substring(1))-1].ProjectTitle;
-            document.getElementById("p-desc").innerHTML=data[parseInt(mainValue.substring(1))-1].Description;
-            document.getElementById("p-tech").innerHTML=data[parseInt(mainValue.substring(1))-1].Technologies;
+            document.getElementById("p-heading").innerHTML=data[parseInt(clickValue.substring(1))-1].ProjectTitle;
+            document.getElementById("p-desc").innerHTML=data[parseInt(clickValue.substring(1))-1].Description;
+            document.getElementById("p-tech").innerHTML=data[parseInt(clickValue.substring(1))-1].Technologies;
+            document.getElementById("p-image").src = data[parseInt(clickValue.substring(1))-1].ProjectImage;
         }
     }).fail(function(){
         console.log("An error has occurred.");
     });
 }
+

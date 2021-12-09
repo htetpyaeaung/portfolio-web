@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     
     <title>Htet Pyae Aung | Developer</title>
@@ -107,7 +108,7 @@
     </section>
 
     <!-- Projects Section -->
-    <section class="container-fluid" id="projects" data-ng-controller="projectController">
+    <section class="container-fluid" id="projects">
       <div class="row">
           <div class="projects-heading" onclick="closeProjectInfo()">
               <h1>Projects</h1>
@@ -184,24 +185,40 @@
 
     <!-- Individual Project Section -->
 
-    <section id="myProjects" class="i-projects" data-ng-view="">
+    <section id="myProjects" class="i-projects">
       <a href="javascript:void(0)" 
           class="closebtn" onclick="closeProjectInfo()">
           ×
       </a>
-      <div class="iproj-content container-fluid">
+      <div class="iproj-content container-fluid" >
         <div class="row">
         <div class="col-lg-5">
-            <img src="">
+            <img src="" id="p-image">
         </div>
-        <div class="col-lg-7" style="color: white;">
-            <p id="p-heading"></p>
+        <div class="col-lg-7" style="color: #fff;" id="project-content">
+            <h1 id="p-heading"></h1>
             <p id="p-desc"></p>
+            <h3>Technologies</h3>
             <p id="p-tech"></p>
         </div>
         </div>
     </div>
     </section>
+
+    <section class="container-fluid" id="contact-info" style="background-color: red;">
+      <div class="row">
+        <div class="col-lg-12 contact-info-wrapper">
+            <h1>Get in touch</h1>
+            <p>Wanna talk about project collaboration? I&#39;m available for freelance opportunities. 
+              Send an email to hello@htetpyaeaung.com and we can discuss more about it </p>
+            <button type="button" class="btn draw-border" id="emailbtn">Email Me!</button>
+        </div>
+      </div>
+    </section>
+
+    <footer style="height: 36vh; background-color: aqua; margin-top: 33rem;">
+
+    </footer>
     
     
     <!-- External JS file-->
