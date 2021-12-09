@@ -6,23 +6,6 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-body::-webkit-scrollbar-track
-{
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-  
-}
-body::-webkit-scrollbar
-{
-  width: 14px;
-}
- 
-body::-webkit-scrollbar-thumb
-{
-  
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.5);
-  background:  #501e27;
-}
-
 .hero-image {
     background: url(../images/hero2.jpg) no-repeat center center fixed;
     background-size: cover;
@@ -136,6 +119,7 @@ nav{
   width: 50%;
   margin: auto;
   top: 80rem;
+  --webkit--top: 98rem;
   right: 0;
   bottom: 0;
   left: 0;
@@ -289,6 +273,15 @@ nav{
   padding-left: 2%;
 }
 
+
+.chrome .about-text-wrapper{
+  top: 98rem;
+}
+
+.chrome .project-pointer{
+  top: 166rem;
+}
+
 /* Extra small devices (phones, 600px and down) */
   @media only screen and (max-width: 600px) {
     .intro-info {background: red; padding-top: 1.3rem;}
@@ -301,8 +294,10 @@ nav{
     #name{font-size: 1.8rem;}
     span{padding-right: 17rem;}
     .about-text-wrapper, .project-pointer{width: 100%; top: 36rem; font-size: 13px;}
+    .chrome .about-text-wrapper{ top: 42rem;}
     #linkedinIcon, #githubIcon, #instaIcon, #arrowIcon {width: 8%;}
     .project-pointer{top: 59rem;}
+    .chrome .project-pointer{top: 87rem;}
     .project-pointer h3{font-size: 13px;}
     #projects{ height: 100%;}
     .projects-heading{margin-top: -6rem; width: 100%;}
@@ -327,11 +322,14 @@ nav{
     #name{font-size: 1.6rem;}
     span{padding-right: 27rem;}
     .about-text-wrapper, .project-pointer{width: 100%; top: 24rem; font-size: 12px;}
+    .chrome .about-text-wrapper{ top: 27rem;}
+    .chrome .project-pointer{top: 57rem;}
     #linkedinIcon, #githubIcon, #instaIcon, #arrowIcon {width: 5%;}
     .project-pointer{top: 39rem;}
     .projects-heading{margin-top: -4rem;}
     #logo{width: 19%;}
     #bg{width: 105.4%;}
+    .chrome #bg{width: 105.2%;}
     #b3 #logo{width: 14%;}
     #b6 .tagHolder{width: 100%;}
     .i-projects .closebtn{margin-left: 26rem;}
@@ -349,6 +347,8 @@ nav{
     .hero-image{height: 108vh; margin-top: -4.1rem;}
     span{padding-right: 34rem;}
     .about-text-wrapper, .project-pointer{width: 100%; top: 66rem; font-size: 16px;}
+    .chrome .about-text-wrapper{ top: 87rem;}
+    .chrome .project-pointer{top: 147rem;}
     .project-pointer{top: 98.9rem;}
     .project-pointer h3{font-size: 13px;}
     #linkedinIcon, #githubIcon, #instaIcon, #arrowIcon {width: 4%;}
@@ -356,6 +356,7 @@ nav{
     .projects-heading{margin-top: -10rem; width: 100%;}
     #project-line1{margin-top: 15rem;}
     #bg{width: 104.3%;}
+    .chrome #bg{width: 104.2%;}
     .i-projects{height: 100%; margin-top: 0%;}
     #project-content{margin-top: 15px;}
     #project-content h1{font-size: 21px;}
@@ -375,8 +376,11 @@ nav{
     span{padding-right: 44rem;}
     .about-text-wrapper, .project-pointer{width: 100%; top: 47rem; font-size: 16px;}
     .project-pointer{top: 73.8rem;}
+    .chrome .about-text-wrapper{ top: 57rem;}
+    .chrome .project-pointer{top: 109rem;}
     #linkedinIcon, #githubIcon, #instaIcon, #arrowIcon {width: 4%;}
     #bg{width: 110.3%;}
+    .chrome #bg{width: 110%;}
     #projects{ height: 100vh;}
     .projects-heading{margin-top: 1rem;}
     #project-line1{margin-top: 12.9rem;}
@@ -394,10 +398,14 @@ nav{
     .hero-image{height: 106vh; margin-top: -3rem;}
     .about-text-wrapper, .project-pointer{width: 100%; top: 90rem; font-size: 18px;}
     .project-pointer{top: 127.6rem;}
+    .chrome .about-text-wrapper{ top: 118rem;}
+    .chrome .project-pointer{top: 190rem;}
     #project-line1{margin-top: 21.7rem;}
     .projects-heading{margin-top: 4rem;}
     .i-projects .closebtn{margin-left: 45.5rem;}
     .credit{margin-top: 12rem;}
+    .chrome #bg{width: 110.2%;}
+    .chrome #logo{width: 50%;}
   } 
   
   /* Large devices (laptops/desktops, 992px and up) */
@@ -407,8 +415,13 @@ nav{
     .hero-image{height: 100vh; margin-top: -4.3rem;}
     .about-text-wrapper, .project-pointer{width: 96%; top: 64rem; font-size: 16px;}
     ul.navbar-nav{margin-right: 4rem;}
+    .chrome .about-text-wrapper{
+      top: 78rem;
+    }
     .project-pointer{top: 94.1rem;}
+    .chrome .project-pointer{top: 139rem;}
     #bg{width: 107.7%;}
+    .chrome #bg{width: 107.7%;}
     #project-line1{margin-top: 16.4rem;}
     .i-projects{margin-top: 24.3%;}
     .i-projects .closebtn{margin-left: 60.5rem;}
@@ -419,7 +432,6 @@ nav{
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (min-width: 1200px) {
-    .intro-info {background: pink; padding-top: 22rem;}
     .responsive-image{width: 54%; height: 82%; margin-top: 10.7rem; margin-left: 11rem;}
     ul.navbar-nav{margin-right: 14rem;}
     .about-text-wrapper, .project-pointer{ 
@@ -432,10 +444,15 @@ nav{
       bottom: 0;
       left: 0;
     }
+    .chrome .about-text-wrapper{
+      top: 98rem;
+    }
     .project-pointer{ top: 114rem; }
+    .chrome .project-pointer{top: 167rem;}
     #arrowIcon{width: 5%;}
     .project-pointer h3{font-size: 16px;}
     #bg{width: 104%;}
+    .chrome #bg{width: 104%;}
     #project-line1{margin-top: 20rem;}
     .i-projects{height: 68.2%; margin-top: 16%;}
     .i-projects .closebtn{margin-left: 114.5rem;}
