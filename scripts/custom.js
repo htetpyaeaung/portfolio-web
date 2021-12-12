@@ -24,6 +24,9 @@ function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
 
+var currentYear = new Date().getFullYear();
+document.getElementById("updateYear").innerHTML = currentYear;
+
 let mainValue;
 let tagValue;
 
