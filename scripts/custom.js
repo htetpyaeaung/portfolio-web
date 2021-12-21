@@ -1,3 +1,5 @@
+$(window).resize(function(){location.reload();});
+
 if($(window).width()>900){
     $("nav").removeClass("overlay");
     $("#navbarContent").removeClass("overlay-content");
