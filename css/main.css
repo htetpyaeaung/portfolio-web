@@ -288,6 +288,7 @@ nav{
   @media only screen and (max-width: 600px) {
     .intro-info {padding-top: 1.3rem;}
     .responsive-image{width: 50%; height: 100%; margin-left: 5rem;}
+    .chrome .responsive-image{width: 60%;}
     nav.navbar.navbar-expand-lg.navbar-light div.container-fluid ul.navbar-nav li.nav-item a.nav-link{
       color: #000;
     }
@@ -473,11 +474,28 @@ nav{
   /* New CSS Rules */
 @media only screen and (min-width: 320px) and (max-width: 479px) and (max-height: 740px){ 
   .intro-info{background-color: red;}
-  
+  .chrome .about-text-wrapper {top: 76rem;}
+  .safari .about-text-wrapper {top: 67rem;}
+  .chrome .project-pointer{top: 128rem;}
+  .safari .project-pointer{top: 118rem;}
+  .safari .projects-heading{margin-top: -9rem;}
+  .projects-heading{margin-top: -10rem;}
+  #bg{width: 107%;}
+  .safari #bg{width: 106.5%;}
+  .i-projects .closebtn{margin-left: 18rem; font-size: 36px;}
+  #project-content{font-size: 14px;}
 }
 
 @media only screen and (min-width: 320px) and (max-width: 479px) and (min-height: 741px){ 
   .intro-info{background-color: brown;}
+  .chrome .project-pointer{top: 140rem;}
+  .chrome .about-text-wrapper{top: 87rem;}
+  .projects-heading{margin-top: -11rem;}
+  .projects-heading p{margin-top: 25px;}
+  #bg{width: 106%;}
+  .safari #bg{width: 107%;}
+  .i-projects .closebtn{margin-left: 19rem; font-size: 36px;}
+  #project-content{font-size: 14px;}
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px){ 
@@ -486,12 +504,23 @@ nav{
 
 @media only screen and (min-width: 768px) and (max-width: 991px){ 
   .intro-info{background-color: blue;}
+  .safari #bg{width: 109.7%;}
+  .chrome .project-pointer{top: 203rem;}
+  .chrome #project-line1{margin-top: 23.2rem;}
+  #projects{height: 100vh;}
+  .chrome .projects-heading{margin-top: 0rem;}
+  .i-projects .closebtn{font-size: 61px;}
  }
 
 @media only screen and (min-width: 992px) and (max-width: 1439px) and (max-height: 899px){ 
   .intro-info{background-color: yellow;}
   .chrome .responsive-image{margin-top: 20%;}
   .chrome .about-text-wrapper{top: 80rem;}
+  .chrome .project-pointer{top: 129rem;}
+  #project-line1{margin-top: 15.2rem;}
+  .chrome #bg{width: 105.7%;}
+  .projects-heading{margin-top:0rem ;}
+  .i-projects{height: 70.2%;}
  }
 
  @media only screen and (min-width: 1439px){ 

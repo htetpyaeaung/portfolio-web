@@ -16,10 +16,12 @@ function openNav() {
 
 function openProjectInfo(){
     document.getElementById("myProjects").style.width="100%";
+    $("#emailbtn").hide();
 }
 
 function closeProjectInfo(){
     document.getElementById("myProjects").style.width="0%";
+    $("#emailbtn").show();
 }
 
 function closeNav() {
